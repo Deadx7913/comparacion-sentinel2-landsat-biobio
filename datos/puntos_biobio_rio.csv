@@ -1,0 +1,10 @@
+id,nombre,lat,lon,tipo,seccion_kml,rio,orden,lat_ini,lon_ini,lat_fin,lon_fin,largo_seccion_m
+biobio_alto,Biobío alto (tramo superior del modelo),-37.62013,-72.22818,rio,Perf46,biobio,1,-37.619074,-72.226357,-37.623173,-72.233428,773
+biobio_aguas_arriba,Biobío aguas arriba de Duqueco y Bureo,-37.57539,-72.34055,rio,Perf44,biobio,2,-37.575012,-72.33988,-37.579668,-72.348065,889
+duqueco,Río Duqueco (tramo final),-37.54274,-72.45334,afluente,Aflu3,duqueco,3,-37.542181,-72.453725,-37.544005,-72.452463,231
+bureo,Río Bureo (tramo final),-37.59035,-72.48035,afluente,Aflu1,bureo,4,-37.590286,-72.479731,-37.590529,-72.481981,201
+biobio_negrete,Biobío en Negrete (aguas abajo de Duqueco y Bureo),-37.57794,-72.52664,confluencia,Perf30,biobio,5,-37.576407,-72.525641,-37.583559,-72.530295,894
+biobio_medio,Biobío entre Negrete y Nacimiento,-37.54647,-72.59077,rio,Perf32,biobio,6,-37.546424,-72.58969,-37.546588,-72.593738,358
+biobio_nacimiento,Biobío en Nacimiento (aguas arriba del Vergara),-37.49521,-72.63933,rio,Perf38,biobio,7,-37.497306,-72.640747,-37.490447,-72.636097,865
+vergara,Río Vergara en Nacimiento,-37.50267,-72.66567,afluente,Aflu5,vergara,8,-37.502518,-72.666207,-37.503087,-72.664157,192
+biobio_bajo_vergara,Biobío aguas abajo del Vergara,-37.46067,-72.68066,confluencia,Perf34,biobio,9,-37.46036,-72.679602,-37.463568,-72.690496,1028

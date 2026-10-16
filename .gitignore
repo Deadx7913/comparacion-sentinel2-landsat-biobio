@@ -218,3 +218,8 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Este proyecto
+# funciones del curso (las descarga el notebook) y resultados de cada ejecución
+geomatica-aplicada/
+salidas/

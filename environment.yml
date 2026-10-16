@@ -1,0 +1,33 @@
+# Entorno para comparacion_sentinel2_landsat.ipynb
+# Crear:  conda env create -f environment.yml
+# Usar:   conda activate sentinel2-landsat   y luego   jupyter lab
+name: sentinel2-landsat
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  # catálogo STAC y lectura de imágenes en la nube
+  - pystac-client
+  - planetary-computer
+  - odc-stac
+  - rioxarray
+  - rasterio
+  - dask
+  # datos, cálculo y aprendizaje automático (Isolation Forest)
+  - xarray
+  - pandas=2.2
+  - numpy
+  - scipy
+  - scikit-learn
+  - pyarrow
+  - shapely
+  - pyproj
+  - requests
+  # gráficos y mapas
+  - matplotlib
+  - plotly
+  - folium
+  # notebook y git (la primera celda descarga las funciones del curso)
+  - jupyterlab
+  - ipykernel
+  - git
