@@ -36,9 +36,14 @@ jupyter lab
 ```
 
 Las imágenes se leen desde [Microsoft Planetary Computer](https://planetarycomputer.microsoft.com/) (no se descarga ninguna
-escena completa). Las series se guardan año por año en `salidas/`: si la sesión se corta, al volver a ejecutar no se
-descarga de nuevo lo que ya estaba. Con los parámetros por defecto (Sentinel-2 2024-2025 y Landsat 2013-2025) la primera
-ejecución toma del orden de una hora, casi todo en la serie de Landsat.
+escena completa, solo la zona de trabajo).
+
+**Los datos del satélite se descargan una sola vez.** Las series quedan en archivos `.parquet` (uno por satélite y por año)
+y las dos escenas del bloque A en un `.npz`. Al volver a ejecutar, el notebook lee esos archivos y no descarga nada: los
+bloques C, D y E trabajan solo con los parquet. En Colab se guardan en tu Google Drive
+(`MyDrive/comparacion_sentinel2_landsat/salidas`, con `USAR_DRIVE = True`), porque la carpeta `/content` se borra al
+cerrar la sesión; en tu computador quedan en `salidas/`. Con los parámetros por defecto (Sentinel-2 2024-2025 y Landsat
+2013-2025) la primera ejecución toma del orden de una hora, casi todo en la serie de Landsat; las siguientes, segundos.
 
 ## Archivos
 
@@ -47,7 +52,7 @@ comparacion_sentinel2_landsat.ipynb   el notebook
 datos/puntos_biobio_rio.csv           los 9 puntos (id, nombre, lat, lon, tipo + sección, río y orden)
 docs/resumen_codigo.pdf               resumen de cada bloque, para presentar
 environment.yml                       entorno de conda para ejecutarlo en local
-salidas/                              (se crea al ejecutar) parquet, CSV y gráficos
+salidas/                              (se crea al ejecutar) parquet, npz, CSV y gráficos
 ```
 
 ## Datos y créditos
